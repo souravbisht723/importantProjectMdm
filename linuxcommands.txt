@@ -1,0 +1,83 @@
+scp ab.txt 202942@pimrwadmin@172.17.89.180@172.15.3.195:/tmp
+ssh 202943@pimrwadmin@172.17.89.180@172.15.3.195
+Welcome@1234
+
+
+http://172.17.89.180:3000/
+this mdm sever
+5432
+
+202681
+
+linux commands
+
+ssh 202681@pimrwadmin@172.17.89.180@172.15.3.195
+sudo su -
+cd /opt/mdmService/mdmCustomerService/target
+
+under mdmCustomService
+mvn clean install -DskipTests
+
+./start.sh
+ps -eaf | grep java
+kill 11707
+tail -f nohup.out
+
+
+575061
+
+s3://4364b2f0f4e849739f8245e5ef26a5d5-logs/AWSLogs/606473020822/
+
+
+
+to check running services in linux === ps aux
+to kill particular pid === kill 9 pid_no
+or ctrl c
+
+scp mdmservice-0.0.1-SNAPSHOT.jar 202681@pimrwadmin@172.17.89.180@172.15.3.195:/tmp
+
+nohup java -jar mdmservice-0.0.1-SNAPSHOT.jar &
+
+
+ssh 202681@pimrwadmin@172.18.3.226@172.15.3.195
+scp customerPortalService-0.0.1-SNAPSHOT.jar 202681@pimrwadmin@172.18.3.226@172.15.3.195:/tmp
+scp customerPortalService-0.0.1-SNAPSHOT.jar 202681@pimrwadmin@172.17.76.88@172.15.3.195:/tmp
+
+
+/////////////swagger Api Url////////
+
+CustomerPortal : 1 UAT
+http://172.18.3.226:3000/customerPortal/swagger-ui/index.html#
+http://localhost:8083/customerPortalService/swagger-ui/index.html#
+2 prod
+http://172.17.76.88:3000/customerPortal/swagger-ui/index.html#
+
+NGE 360
+Prod
+http://172.17.89.180:3000/customer360Service/swagger-ui/index.html#/dashboard-controller/findTotalNoOfDisbursedDetailsUsingGET
+http://localhost:8085/nge360/swagger-ui/index.html#
+
+Mdm360
+http://172.17.89.180:3000/customer360Service/swagger-ui/index.html#/dashboard-controller/findTotalNoOfDisbursedDetailsUsingGET
+http://localhost:8080/mdmService/swagger-ui/index.html#/
+
+
+
+
+
+
+202681@pimrwadmin@172.18.3.226@172.15.3.195:/opt/customerPortal
+
+for frontened:-------------------------------
+
+scp build_04.zip 202943@pimrwadmin@172.18.3.226@172.15.3.195:/tmp
+ssh 202943@pimrwadmin@172.18.3.226@172.15.3.195
+sudo su -
+cd /opt/customerPortalBuild
+mv /tmp/build_04.zip .
+unzip build_04.zip
+systemctl restart nginx
+systemctl status nginx
+
+Software Installation:   Anaconda ,putty, Notepad++,Python3,Postman,Eclipse,postgres
+
