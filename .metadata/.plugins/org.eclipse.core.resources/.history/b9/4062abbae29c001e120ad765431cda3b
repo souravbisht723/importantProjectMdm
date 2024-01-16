@@ -1,0 +1,10 @@
+package com.example.core.demo1.postgres.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="entities")
+public class Product {
+
+}

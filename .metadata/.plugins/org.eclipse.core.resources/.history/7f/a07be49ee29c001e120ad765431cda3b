@@ -1,0 +1,7 @@
+package com.example.core.demo1.postgres.entity;
+
+@Entity
+@Table(name="entities")
+public class Product {
+
+}
